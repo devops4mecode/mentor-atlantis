@@ -1,7 +1,24 @@
+##NETWORKING SETUP
+
+# VPC
+
+#Subnet
+
+#Route
+
+#Security Gorup
+
+#IGW
+
+#NATGateway
+
+
 module "atlantis" {
   source  = "ringanta/ec2-atlantis/aws"
   version = "1.0.0"
-  public_key          = "X
+  key_name = "linux-sea-key"
+  instance_type = "t3.medium"
+  attach_admin_policy = true
 }
 
 resource "aws_s3_bucket" "terraform_state" {
