@@ -40,5 +40,5 @@ resource "aws_dynamodb_table" "terraform_lock" {
 }
 
 resource "aws_s3_bucket" "bucket" {
-    bucket = "dummy-bucket-for-testing-123abc"
+    bucket = "do4m-dummy-bucket"
 }
