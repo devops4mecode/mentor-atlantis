@@ -38,3 +38,7 @@ resource "aws_dynamodb_table" "terraform_lock" {
     type = "S"
   }
 }
+
+resource "aws_s3_bucket" "bucket" {
+    bucket = "dummy-bucket-for-testing-123abc"
+}
